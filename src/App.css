@@ -86,3 +86,23 @@ select {
   box-shadow:0 30px 80px rgba(0,0,0,.5);
 
 }
+
+html,
+body,
+#root {
+
+width:100%;
+max-width:100%;
+overflow-x:hidden;
+
+}
+
+
+input,
+select,
+textarea,
+button {
+
+max-width:100%;
+
+}

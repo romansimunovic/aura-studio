@@ -65,7 +65,14 @@ ${SERVICES[service].name}`
 
 return (
 
-<div className="max-w-lg mx-auto">
+<div className="
+w-full
+max-w-lg
+mx-auto
+px-1
+sm:px-0
+overflow-hidden
+">
 
 
 <h2 className="font-serif text-3xl text-center mb-10">
@@ -75,8 +82,14 @@ Provjeri dostupnost termina
 
 
 <form
+
 onSubmit={submit}
-className="space-y-5"
+
+className="
+w-full
+space-y-5
+"
+
 >
 
 
@@ -86,7 +99,24 @@ required
 
 placeholder="Ime i prezime"
 
-className="w-full p-4 border rounded-xl"
+className="
+w-full
+max-w-full
+
+p-4
+
+border
+border-[#EFCACF]
+
+rounded-xl
+
+text-sm
+
+bg-white
+
+box-border
+
+"
 
 />
 
@@ -100,7 +130,24 @@ type="tel"
 
 placeholder="Telefon"
 
-className="w-full p-4 border rounded-xl"
+className="
+w-full
+max-w-full
+
+p-4
+
+border
+border-[#EFCACF]
+
+rounded-xl
+
+text-sm
+
+bg-white
+
+box-border
+
+"
 
 />
 
@@ -112,7 +159,26 @@ required
 
 onChange={e=>setService(e.target.value)}
 
-className="w-full p-4 border rounded-xl"
+className="
+w-full
+max-w-full
+
+appearance-none
+
+p-4
+
+border
+border-[#EFCACF]
+
+rounded-xl
+
+bg-white
+
+text-sm
+
+box-border
+
+"
 
 >
 
@@ -146,7 +212,24 @@ type="date"
 
 onChange={handleDate}
 
-className="w-full p-4 border rounded-xl"
+className="
+w-full
+max-w-full
+
+p-4
+
+border
+border-[#EFCACF]
+
+rounded-xl
+
+text-sm
+
+bg-white
+
+box-border
+
+"
 
 />
 
@@ -164,26 +247,49 @@ Slobodni termini
 
 
 
-<div className="grid grid-cols-3 gap-2">
+<div
+
+className="
+grid
+
+grid-cols-2
+sm:grid-cols-3
+
+gap-2
+
+w-full
+
+"
+
+>
 
 
 {slots.map(slot=>(
 
 <button
 
-type="button"
+disabled={!selected}
 
-key={slot}
+className="
+w-full
 
-onClick={()=>setSelected(slot)}
+max-w-full
 
-className={`p-3 rounded-lg text-sm ${
-selected===slot
-?
-"bg-[#4A3E3F] text-white"
-:
-"bg-[#FDF5F6]"
-}`}
+bg-[#4A3E3F]
+
+text-white
+
+p-4
+
+rounded-xl
+
+text-sm
+
+transition
+
+disabled:opacity-40
+
+"
 
 >
 
