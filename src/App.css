@@ -106,3 +106,18 @@ button {
 max-width:100%;
 
 }
+
+input[type="date"] {
+
+  min-height: 52px;
+
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+
+  cursor:pointer;
+
+  opacity:0.6;
+
+}

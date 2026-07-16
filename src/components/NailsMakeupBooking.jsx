@@ -204,6 +204,22 @@ Odaberi uslugu
 
 
 
+<div className="relative">
+
+<label
+className="
+block
+text-[10px]
+uppercase
+tracking-widest
+text-[#C98B94]
+mb-2
+"
+>
+Odaberi datum
+</label>
+
+
 <input
 
 required
@@ -223,15 +239,22 @@ border-[#EFCACF]
 
 rounded-xl
 
-text-sm
-
 bg-white
+
+text-[#4A3E3F]
+
+text-sm
 
 box-border
 
+appearance-none
+
 "
 
-/>
+ />
+
+
+</div>
 
 
 
